@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<fsimage><version><layoutVersion>-63</layoutVersion><onDiskVersion>1</onDiskVersion><oivRevision>17e75c2a11685af3e043aa5e604dc831e5b14674</oivRevision></version>
+<NameSection><namespaceId>1168883803</namespaceId><genstampV1>1000</genstampV1><genstampV2>1004</genstampV2><genstampV1Limit>0</genstampV1Limit><lastAllocatedBlockId>1073741828</lastAllocatedBlockId><txid>70</txid></NameSection>
+<INodeSection><lastInodeId>16394</lastInodeId><numInodes>5</numInodes><inode><id>16385</id><type>DIRECTORY</type><name></name><mtime>1554733398948</mtime><permission>root:supergroup:0755</permission><nsquota>9223372036854775807</nsquota><dsquota>-1</dsquota></inode>
+<inode><id>16390</id><type>FILE</type><name>helloword.txt</name><replication>2</replication><mtime>1554454944380</mtime><atime>1560439641014</atime><preferredBlockSize>134217728</preferredBlockSize><permission>root:supergroup:0644</permission><blocks><block><id>1073741825</id><genstamp>1001</genstamp><numBytes>10</numBytes></block>
+</blocks>
+<storagePolicyId>0</storagePolicyId></inode>
+<inode><id>16391</id><type>DIRECTORY</type><name>axin</name><mtime>1554549150515</mtime><permission>root:supergroup:0755</permission><nsquota>-1</nsquota><dsquota>-1</dsquota></inode>
+<inode><id>16392</id><type>FILE</type><name>hadoop-2.7.2.rar</name><replication>2</replication><mtime>1554549177016</mtime><atime>1554734810201</atime><preferredBlockSize>134217728</preferredBlockSize><permission>root:supergroup:0644</permission><blocks><block><id>1073741826</id><genstamp>1002</genstamp><numBytes>134217728</numBytes></block>
+<block><id>1073741827</id><genstamp>1003</genstamp><numBytes>80316141</numBytes></block>
+</blocks>
+<storagePolicyId>0</storagePolicyId></inode>
+<inode><id>16394</id><type>FILE</type><name>TeamViewer.rar</name><replication>3</replication><mtime>1554733399916</mtime><atime>1554733398948</atime><preferredBlockSize>134217728</preferredBlockSize><permission>root:supergroup:0644</permission><blocks><block><id>1073741828</id><genstamp>1004</genstamp><numBytes>25486797</numBytes></block>
+</blocks>
+<storagePolicyId>0</storagePolicyId></inode>
+</INodeSection>
+<INodeReferenceSection></INodeReferenceSection><SnapshotSection><snapshotCounter>0</snapshotCounter><numSnapshots>0</numSnapshots></SnapshotSection>
+<INodeDirectorySection><directory><parent>16385</parent><child>16394</child><child>16391</child><child>16390</child></directory>
+<directory><parent>16391</parent><child>16392</child></directory>
+</INodeDirectorySection>
+<FileUnderConstructionSection></FileUnderConstructionSection>
+<SecretManagerSection><currentId>0</currentId><tokenSequenceNumber>0</tokenSequenceNumber><numDelegationKeys>0</numDelegationKeys><numTokens>0</numTokens></SecretManagerSection><CacheManagerSection><nextDirectiveId>1</nextDirectiveId><numDirectives>0</numDirectives><numPools>0</numPools></CacheManagerSection>
+</fsimage>
