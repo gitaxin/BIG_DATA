@@ -4,6 +4,8 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.compress.BZip2Codec;
+import org.apache.hadoop.io.compress.CompressionCodec;
 import org.apache.hadoop.mapred.lib.CombineFileInputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.CombineTextInputFormat;
@@ -40,6 +42,11 @@ public class WordCountDriver {
         //1.获取配置信息
         Configuration conf = new Configuration();
 
+        //开启map输出压缩
+        conf.setBoolean("mapreduce.map.output.compress",true);
+        //设置map输出压缩方式
+        conf.setClass("mapreduce.map.output.compress",BZip2Codec.class,CompressionCodec.class);
+
         Job job = Job.getInstance(conf);
 
         //反射三个类在
@@ -72,9 +79,17 @@ public class WordCountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
+        //开启reduce端输出压缩
+        FileOutputFormat.setCompressOutput(job,true);
+        //设置reduce端输出压缩格式
+        FileOutputFormat.setOutputCompressorClass(job,BZip2Codec.class);
+
+
         //数据的输入和输出
         FileInputFormat.setInputPaths(job,new Path(args[0]));
         FileOutputFormat.setOutputPath(job,new Path(args[1]));
+
+
 
         /* 提交job， waitForCompletion包含job.submit() */
         job.waitForCompletion(true);
