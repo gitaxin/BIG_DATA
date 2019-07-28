@@ -12,6 +12,20 @@ import java.io.IOException;
 public class WordCountReducer extends Reducer<Text, IntWritable,Text, IntWritable> {
 
     IntWritable v = new IntWritable();
+
+    @Override
+    protected void setup(Context context) throws IOException, InterruptedException {
+        System.out.println("WordCountReducer.setup");
+        super.setup(context);
+    }
+
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        System.out.println("WordCountReducer.cleanup");
+        super.cleanup(context);
+    }
+
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
 

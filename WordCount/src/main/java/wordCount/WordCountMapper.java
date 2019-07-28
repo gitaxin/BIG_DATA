@@ -16,6 +16,18 @@ public class WordCountMapper extends Mapper<LongWritable, Text,Text, IntWritable
     IntWritable v = new IntWritable();
 
     @Override
+    protected void setup(Context context) throws IOException, InterruptedException {
+        System.out.println("WordCountMapper.setup");
+        super.setup(context);
+    }
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        System.out.println("WordCountMapper.cleanup");
+        super.cleanup(context);
+    }
+
+    @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
         //1.转换格式
