@@ -91,7 +91,7 @@ public class WordCountDriver {
 
 
 
-        /* 提交job， waitForCompletion包含job.submit() */
+        /* 提交job， waitForCompletion包含job.submit() ：提交给yarn去运行*/
         job.waitForCompletion(true);
 
 

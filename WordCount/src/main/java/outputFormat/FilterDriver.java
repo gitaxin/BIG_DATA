@@ -1,4 +1,4 @@
-package Phone;
+package outputFormat;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -13,38 +13,34 @@ import java.io.IOException;
 /**
  * @Description:
  * @Author: Axin
- * @Date: Create in 22:59 2019/7/27
+ * @Date: Create in 23:44 2019/8/2
  */
-public class PhoneDriver {
-
+public class FilterDriver {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 
-        String inputPath = "E:\\test_input\\phone_num.txt";
-        String outPath = "E:\\test_out\\" + System.currentTimeMillis();
 
+        args = new String[]{"E:\\test_input\\itstarlog\\A\\other.log","E:\\test_input\\itstarlog\\BC"};
         Configuration conf = new Configuration();
 
-        //conf中可配置集群路径 ，跑集群地址
         Job job = Job.getInstance(conf);
 
-        job.setJarByClass(PhoneDriver.class);
-        job.setMapperClass(PhoneMapper.class);
-        job.setReducerClass(PhoneReducer.class);
+        job.setJarByClass(FilterDriver.class);
+        job.setMapperClass(FilterMapper.class);
+        job.setReducerClass(FilterReducer.class);
 
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(NullWritable.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(NullWritable.class);
 
-        job.setPartitionerClass(PhonePartitioner.class);
-        job.setNumReduceTasks(6);
+        //      设置自定义输出格式组件
+        job.setOutputFormatClass(FilterOutputformat.class);
 
-        FileInputFormat.setInputPaths(job,new Path(inputPath));
-        FileOutputFormat.setOutputPath(job,new Path(outPath));
+        FileInputFormat.setInputPaths(job,new Path(args[0]));
+        FileOutputFormat.setOutputPath(job,new Path(args[1]));
 
         job.waitForCompletion(true);
-
 
     }
 }

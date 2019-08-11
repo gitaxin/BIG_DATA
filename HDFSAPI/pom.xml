@@ -6,7 +6,9 @@
 
     <groupId>top.hao456</groupId>
     <artifactId>HDFSAPI</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
 
     <dependencies>
         <dependency>
