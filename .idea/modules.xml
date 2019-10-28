@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AzkabanTest/AzkabanTest.iml" filepath="$PROJECT_DIR$/AzkabanTest/AzkabanTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Elasticsearch/Elasticsearch.iml" filepath="$PROJECT_DIR$/Elasticsearch/Elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flink/Flink.iml" filepath="$PROJECT_DIR$/Flink/Flink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlumeInterceptor/FlumeInterceptor.iml" filepath="$PROJECT_DIR$/FlumeInterceptor/FlumeInterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HBase/HBase.iml" filepath="$PROJECT_DIR$/HBase/HBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HDFSAPI/HDFSAPI.iml" filepath="$PROJECT_DIR$/HDFSAPI/HDFSAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hive/Hive.iml" filepath="$PROJECT_DIR$/Hive/Hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MemCached/MemCached.iml" filepath="$PROJECT_DIR$/MemCached/MemCached.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordCount/WordCount.iml" filepath="$PROJECT_DIR$/WordCount/WordCount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zookeeper222/Zookeeper.iml" filepath="$PROJECT_DIR$/Zookeeper222/Zookeeper.iml" />
+    </modules>
+  </component>
+</project>

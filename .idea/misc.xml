@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/HDFSAPI/pom.xml" />
+        <option value="$PROJECT_DIR$/WordCount/pom.xml" />
+        <option value="$PROJECT_DIR$/FlumeInterceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/Hive/pom.xml" />
+        <option value="$PROJECT_DIR$/Zookeeper222/pom.xml" />
+        <option value="$PROJECT_DIR$/AzkabanTest/pom.xml" />
+        <option value="$PROJECT_DIR$/HBase/pom.xml" />
+        <option value="$PROJECT_DIR$/Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/MemCached/pom.xml" />
+        <option value="$PROJECT_DIR$/Flink/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/HDFSAPI/ZooKeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/WordCount/Zookeeper/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

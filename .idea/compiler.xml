@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AzkabanTest" />
+        <module name="Elasticsearch" />
+        <module name="Flink" />
+        <module name="FlumeInterceptor" />
+        <module name="HBase" />
+        <module name="Hive" />
+        <module name="MemCached" />
+        <module name="Zookeeper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AzkabanTest" target="1.8" />
+      <module name="Elasticsearch" target="1.8" />
+      <module name="Flink" target="1.8" />
+      <module name="FlinkTest" target="1.8" />
+      <module name="FlumeInterceptor" target="1.8" />
+      <module name="HBase" target="1.8" />
+      <module name="HDFSAPI" target="1.8" />
+      <module name="Hive" target="1.8" />
+      <module name="MemCached" target="1.8" />
+      <module name="WordCount" target="1.8" />
+      <module name="ZooKeeper" target="1.8" />
+      <module name="Zookeeper" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
